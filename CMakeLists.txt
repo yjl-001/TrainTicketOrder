@@ -3,4 +3,4 @@ project(TrainTicketOrder)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TrainTicketOrder main.cpp)
+add_executable(TrainTicketOrder src/main.cpp src/Ticket.cpp include/Ticket.h)
