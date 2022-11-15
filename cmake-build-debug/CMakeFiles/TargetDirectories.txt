@@ -1,3 +1,0 @@
-D:/C_code/TrainTicketOrder/cmake-build-debug/CMakeFiles/TrainTicketOrder.dir
-D:/C_code/TrainTicketOrder/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/C_code/TrainTicketOrder/cmake-build-debug/CMakeFiles/rebuild_cache.dir
