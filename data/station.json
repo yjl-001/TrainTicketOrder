@@ -1,0 +1,170 @@
+{
+  "map": {
+    "station1": 1,
+    "station2": 2,
+    "station3": 3,
+    "station4": 4,
+    "station5": 5,
+    "station6": 6,
+    "station7": 7,
+    "station8": 8,
+    "station9": 9,
+    "station10": 10,
+    "station11": 11,
+    "station12": 12,
+    "station13": 13,
+    "station14": 14,
+    "station15": 15
+  },
+  "station": {
+    "1": [2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+    "2": [3,4,5,6,7,8,9,10,11,12,13,14,15],
+    "3": [4,5,6,7,8,9,10,11,12,13,14,15],
+    "4": [5,6,7,8,9,10,11,12,13,14,15],
+    "5": [6,7,8,9,10,11,12,13,14,15],
+    "6": [7,8,9,10,11,12,13,14,15],
+    "7": [8,9,10,11,12,13,14,15],
+    "8": [9,10,11,12,13,14,15],
+    "9": [10,11,12,13,14,15],
+    "10": [11,12,13,14,15],
+    "11": [12,13,14,15],
+    "12": [13,14,15],
+    "13": [14,15],
+    "14": [15]
+  },
+  "ticket": {
+    "1": [
+      {"destination": 2, "price": 100, "number": 20},
+      {"destination": 3, "price": 100, "number": 20},
+      {"destination": 4, "price": 100, "number": 20},
+      {"destination": 5, "price": 100, "number": 20},
+      {"destination": 6, "price": 100, "number": 20},
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "2": [
+      {"destination": 3, "price": 100, "number": 20},
+      {"destination": 4, "price": 100, "number": 20},
+      {"destination": 5, "price": 100, "number": 20},
+      {"destination": 6, "price": 100, "number": 20},
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "3": [
+      {"destination": 4, "price": 100, "number": 20},
+      {"destination": 5, "price": 100, "number": 20},
+      {"destination": 6, "price": 100, "number": 20},
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "4": [
+      {"destination": 5, "price": 100, "number": 20},
+      {"destination": 6, "price": 100, "number": 20},
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "5": [
+      {"destination": 6, "price": 100, "number": 20},
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "6": [
+      {"destination": 7, "price": 100, "number": 20},
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "7": [
+      {"destination": 8, "price": 100, "number": 20},
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "8": [
+      {"destination": 9, "price": 100, "number": 20},
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "9": [
+      {"destination": 10, "price": 100, "number": 20},
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "10": [
+      {"destination": 11, "price": 100, "number": 20},
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "11": [
+      {"destination": 12, "price": 100, "number": 20},
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "12": [
+      {"destination": 13, "price": 100, "number": 20},
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "13": [
+      {"destination": 14, "price": 100, "number": 20},
+      {"destination": 15, "price": 100, "number": 20}
+    ],
+    "14": [
+      {"destination": 15, "price": 100, "number": 20}
+    ]
+  }
+}

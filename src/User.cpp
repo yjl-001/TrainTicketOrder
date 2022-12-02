@@ -38,8 +38,8 @@ void User::setUsername(std::string username) {
 }
 
 void User::setPassword(std::string password) {
-    if(this->type!=0){ //管理员不允许改名
-        this->username = username;
+    if(this->type!=0){ //管理员不允许改密码
+        this->password = password;
     }
 }
 
