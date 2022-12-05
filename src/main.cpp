@@ -6,7 +6,7 @@
 // 定义全局变量
 User user; //用户
 Json::Value station_root = JsonUtil::readJsonFile("../data/station.json");
-
+Json::Value order_root = JsonUtil::readJsonFile("../data/consumeTicket.json");
 int main() {
     std::cout<<"welcome to our system!"<<std::endl;
     std::cout<<"please login in  if you have an account, or please register first"<<std::endl;

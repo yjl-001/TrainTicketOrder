@@ -5,6 +5,7 @@
 #include "../lib/jsoncpp/json/json.h"
 #include <iostream>
 extern Json::Value station_root;
+extern Json::Value order_root;
 void checkTickets(){
     // 输入数据
     std::string origin_station, dest_station;
@@ -112,7 +113,14 @@ void checkTickets(){
 }
 
 void buyTicket(){
-
+    // 定义Order
+    Order order = Order();
+    if(order.generateOrder(station_root)){
+        if(order.save(order_root)){
+            std::cout<<"order successfully"<<std::endl;
+            order.toString();
+        }
+    }
 }
 
 void refundTicket(){
