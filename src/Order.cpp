@@ -198,17 +198,27 @@ bool Order::generateOrder(Json::Value station_root) {
             Json::Value tickets = station_tickets.get(origin, "null");
             for (int i = 0; i < tickets.size(); i++) {
                 if (tickets.get(i, "null").get("destination", "0").asInt() == destination) {
-                    std::cout<<"generating....."<<std::endl;
-                    this->setStartTime(station_root.get("time-start", "null")
-                                        .get(trainMap.get(train_id, "null").asString(),"null")
-                                        .get(origin, "null").asString());
-                    this->setEndTime(station_root.get("time-end", "null")
-                                        .get(trainMap.get(train_id, "null").asString(),"null")
-                                        .get(std::to_string(destination),"null").asString());
-                    this->setPrice(tickets.get(i, "null").get("price", "0").asInt());
-                    this->setOrderState(0);
+                    if(tickets.get(i, "null").get("number", "0").asInt() > 0){
+                        std::cout<<"generating....."<<std::endl;
+                        this->setStartTime(station_root.get("time-start", "null")
+                                                   .get(trainMap.get(train_id, "null").asString(),"null")
+                                                   .get(origin, "null").asString());
+                        this->setEndTime(station_root.get("time-end", "null")
+                                                 .get(trainMap.get(train_id, "null").asString(),"null")
+                                                 .get(std::to_string(destination),"null").asString());
+                        this->setPrice(tickets.get(i, "null").get("price", "0").asInt());
+                        this->setOrderState(0);
+                        int new_num = tickets.get(i,"null").get("number","null").asInt()-1;
+                        tickets[i]["number"] = new_num;
+                        station_root["ticket"][trainMap.get(train_id, "null").asString()][origin][i]["number"] = new_num;
+                    }else{
+                        std::cout<<"there are no tickets"<<std::endl;
+                        return false;
+                    }
                 }
             }
+            std::cout<<station_root<<std::endl;
+            JsonUtil::writeJsonFile("../data/station.json",station_root);
             return true;
         }else{
             return false;
