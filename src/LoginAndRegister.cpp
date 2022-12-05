@@ -1,21 +1,22 @@
 //
-// Created by yjl on 2022/11/30.
+// Created by whd on 2022/11/30.
 //
 #include "../include/User.h"
 #include "../include/LoginAndRegister.h"
 #include "../lib/jsoncpp/json/json.h"
 #include "../include/JsonUtil.h"
+#include "../include/OperationForTickets.h"
 extern User user;
 void login_in(){
     std::string username ;
-    std::cout<<"username: ";
+    std::cout<<"username:"<<std::endl;
     std::cin>>username;
     std::string password ;
-    std::cout<<"password: ";
+    std::cout<<"password:"<<std::endl;
     std::cin>>password;
     if(login_in_logic(username, password)){
         std::cout<<"success to login in"<<std::endl;
-        //TODO 进入系统
+        enterSystem();
     }else{
         std::cout<<"failed to login in, please check your username or password!"<<std::endl;
         login_in();
@@ -24,10 +25,10 @@ void login_in(){
 
 void user_register(){
     std::string username;
-    std::cout<<"username: ";
+    std::cout<<"username:"<<std::endl;
     std::cin>>username;
     std::string password;
-    std::cout<<"password: ";
+    std::cout<<"password:"<<std::endl;
     std::cin>>password;
     if(register_logic(username, password)){
         std::cout<<"success to register"<<std::endl;
@@ -66,5 +67,22 @@ bool register_logic(const std::string& username, const std::string& password){
     root["user"] = usr;
     JsonUtil::writeJsonFile("../data/userInfo.json", root);
     return true;
+}
+
+void enterSystem(){
+    int operation = 0;
+    std::cout<<"please choose your operation:\n"<<"\t1. check tickets\n"<<"\t2. buy a ticket\n"<<"\t3. refund ticket"<<std::endl;
+    std::cin>>operation;
+    switch (operation) {
+        case 1:
+            checkTickets();
+            break;
+        case 2:
+            buyTicket();
+            break;
+        case 3:
+            refundTicket();
+            break;
+    }
 }
 

@@ -2,7 +2,11 @@
 #include "../include/Ticket.h"
 #include "../include/JsonUtil.h"
 #include "../include/LoginAndRegister.h"
-User user;
+
+// 定义全局变量
+User user; //用户
+Json::Value station_root = JsonUtil::readJsonFile("../data/station.json");
+
 int main() {
     std::cout<<"welcome to our system!"<<std::endl;
     std::cout<<"please login in  if you have an account, or please register first"<<std::endl;
