@@ -1,5 +1,5 @@
 //
-// Created by yjl on 2022/11/30.
+// Created by whd on 2022/11/30.
 //
 
 #ifndef TRAINTICKETORDER_LOGINANDREGISTER_H
@@ -11,5 +11,7 @@ void user_register();
 
 bool login_in_logic(const std::string& username, const std::string& password);
 bool register_logic(const std::string& username, const std::string& password);
+
+void enterSystem();
 
 #endif //TRAINTICKETORDER_LOGINANDREGISTER_H
