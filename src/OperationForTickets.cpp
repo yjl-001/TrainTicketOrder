@@ -4,7 +4,9 @@
 #include "../include/OperationForTickets.h"
 #include "../lib/jsoncpp/json/json.h"
 #include <iostream>
+#include <map>
 extern Json::Value station_root;
+extern Json::Value order_root;
 void checkTickets(){
     // 输入数据
     std::string origin_station, dest_station;
@@ -112,9 +114,55 @@ void checkTickets(){
 }
 
 void buyTicket(){
-
+    // 定义Order
+    Order order = Order();
+    if(order.generateOrder(station_root)){
+        if(order.save(order_root)){
+            std::cout<<"order successfully"<<std::endl;
+            order.toString();
+        }
+    }
 }
 
 void refundTicket(){
+    Json::Value user_order = order_root.get(user.getUsername(),"null");//JsonArray
+    std::map<int, Json::Value> orders;
+    std::cout<<"\tOrder NO."<<"\tOrder Info"<<std::endl;
+    for(int i=0; i<user_order.size();i++){
+        if(user_order.get(i,"null").get("order_state","null").asInt()==0){
+            int orderNo = user_order.get(i,"null").get("orderNumber","null").asInt();
+            orders[orderNo] = user_order.get(i,"null");
+            std::cout<<"\t"<<orderNo<<"\ttrainNO. is: "<<user_order.get(i,"null").get("train_NO","null").asString()<<std::endl;
+            std::cout<<"\t\tOriginal Station: "<<user_order.get(i,"null").get("original_station","null").asString()<<std::endl;
+            std::cout<<"\t\tStart time: "<<user_order.get(i,"null").get("start_time","null").asString()<<std::endl;
+            std::cout<<"\t\tDestination Station: "<<user_order.get(i,"null").get("destination_station","null").asString()<<std::endl;
+            std::cout<<"\t\tEnd time: "<<user_order.get(i,"null").get("end_time","null").asString()<<std::endl;
+            std::cout<<"\t\tPrice: "<<user_order.get(i,"null").get("price","null").asString()<<std::endl;
+        }
+    }
+    std::cout<<"please input your choose to refund the ticket"<<std::endl;
+    int choose;
+    std::cin>>choose;
+    Json::Value trainMap = station_root.get("train_map","null");
+    Json::Value stationsMap = station_root.get("map","null");
+    std::string train_id = orders[choose].get("train_NO","null").asString();
+    Json::Value des = station_root["ticket"][trainMap.get(train_id, "null").asString()][stationsMap.get(orders[choose].get("original_station","null").asString(),"null").asString()];
+    for(int i=0;i<des.size();i++){
+        if(des.get(i,"0").get("destination","0").asInt()==stationsMap.get(orders[choose].get("destination_station","null").asString(),"null").asInt()){
+            int new_num = des.get(i,"0").get("number","0").asInt()+1;
+            station_root["ticket"][trainMap.get(train_id, "null").asString()][stationsMap.get(orders[choose].get("original_station","null").asString(),"null").asString()][i]["number"] = new_num;
+        }
+    }
+    JsonUtil::writeJsonFile("../data/station.json",station_root);
+    orders.erase(choose);
+    user_order.resize(0);
+    std::map<int, Json::Value>::iterator it = orders.begin();
+    std::map<int, Json::Value>::iterator itEnd = orders.end();
+    while (it != itEnd){
+        user_order.append(it->second);
+        it++;
+    }
+    order_root[user.getUsername()] = user_order;
+    JsonUtil::writeJsonFile("../data/consumeTicket.json", order_root);
 
 }
