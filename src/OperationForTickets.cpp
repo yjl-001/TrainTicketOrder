@@ -2,7 +2,6 @@
 // Created by whd on 2022/12/2.
 //
 #include "../include/OperationForTickets.h"
-#include "../lib/jsoncpp/json/json.h"
 #include <iostream>
 #include <map>
 extern Json::Value station_root;
@@ -156,8 +155,8 @@ void refundTicket(){
     JsonUtil::writeJsonFile("../data/station.json",station_root);
     orders.erase(choose);
     user_order.resize(0);
-    std::map<int, Json::Value>::iterator it = orders.begin();
-    std::map<int, Json::Value>::iterator itEnd = orders.end();
+    auto it = orders.begin();
+    auto itEnd = orders.end();
     while (it != itEnd){
         user_order.append(it->second);
         it++;
