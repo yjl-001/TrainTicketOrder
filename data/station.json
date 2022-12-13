@@ -25,27 +25,27 @@
 			[
 				{
 					"destination" : 2,
-					"number" : 17,
+					"number" : 15,
 					"price" : 100
 				},
 				{
 					"destination" : 3,
-					"number" : 20,
+					"number" : 16,
 					"price" : 100
 				},
 				{
 					"destination" : 4,
-					"number" : 20,
+					"number" : 17,
 					"price" : 100
 				},
 				{
 					"destination" : 5,
-					"number" : 20,
+					"number" : 18,
 					"price" : 100
 				},
 				{
 					"destination" : 6,
-					"number" : 20,
+					"number" : 19,
 					"price" : 100
 				},
 				{
@@ -55,42 +55,42 @@
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 21,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 21,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 22,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 23,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 24,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 25,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 26,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 27,
 					"price" : 100
 				}
 			],
@@ -98,27 +98,27 @@
 			[
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 8,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 17,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 21,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 25,
 					"price" : 100
 				}
 			],
@@ -126,7 +126,7 @@
 			[
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
@@ -136,12 +136,12 @@
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 27,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 35,
 					"price" : 100
 				}
 			],
@@ -149,17 +149,17 @@
 			[
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 21,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 37,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 52,
 					"price" : 100
 				}
 			],
@@ -167,12 +167,12 @@
 			[
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 47,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 87,
 					"price" : 100
 				}
 			],
@@ -180,65 +180,66 @@
 			[
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 178,
 					"price" : 100
 				}
 			],
+			"15" : "null",
 			"2" : 
 			[
 				{
 					"destination" : 3,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 4,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 5,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 6,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 7,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 15,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 16,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 17,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 18,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 18,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 19,
 					"price" : 100
 				},
 				{
@@ -248,7 +249,7 @@
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 21,
 					"price" : 100
 				}
 			],
@@ -256,62 +257,62 @@
 			[
 				{
 					"destination" : 4,
-					"number" : 20,
+					"number" : 8,
 					"price" : 100
 				},
 				{
 					"destination" : 5,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 6,
-					"number" : 20,
+					"number" : 10,
 					"price" : 100
 				},
 				{
 					"destination" : 7,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 15,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 16,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 16,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 17,
 					"price" : 100
 				}
 			],
@@ -319,57 +320,57 @@
 			[
 				{
 					"destination" : 5,
-					"number" : 20,
+					"number" : 6,
 					"price" : 100
 				},
 				{
 					"destination" : 6,
-					"number" : 20,
+					"number" : 7,
 					"price" : 100
 				},
 				{
 					"destination" : 7,
-					"number" : 20,
+					"number" : 8,
 					"price" : 100
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 10,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 15,
 					"price" : 100
 				}
 			],
@@ -377,52 +378,52 @@
 			[
 				{
 					"destination" : 6,
-					"number" : 20,
+					"number" : 5,
 					"price" : 100
 				},
 				{
 					"destination" : 7,
-					"number" : 20,
+					"number" : 6,
 					"price" : 100
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 7,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 8,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 10,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				}
 			],
@@ -430,47 +431,47 @@
 			[
 				{
 					"destination" : 7,
-					"number" : 20,
+					"number" : 5,
 					"price" : 100
 				},
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 6,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 7,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 8,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 10,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				}
 			],
@@ -478,42 +479,42 @@
 			[
 				{
 					"destination" : 8,
-					"number" : 20,
+					"number" : 5,
 					"price" : 100
 				},
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 6,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 7,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 10,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 13,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				}
 			],
@@ -521,37 +522,37 @@
 			[
 				{
 					"destination" : 9,
-					"number" : 20,
+					"number" : 5,
 					"price" : 100
 				},
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 7,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 11,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				},
 				{
 					"destination" : 15,
-					"number" : 20,
+					"number" : 16,
 					"price" : 100
 				}
 			],
@@ -559,27 +560,27 @@
 			[
 				{
 					"destination" : 10,
-					"number" : 20,
+					"number" : 6,
 					"price" : 100
 				},
 				{
 					"destination" : 11,
-					"number" : 20,
+					"number" : 9,
 					"price" : 100
 				},
 				{
 					"destination" : 12,
-					"number" : 20,
+					"number" : 12,
 					"price" : 100
 				},
 				{
 					"destination" : 13,
-					"number" : 20,
+					"number" : 14,
 					"price" : 100
 				},
 				{
 					"destination" : 14,
-					"number" : 20,
+					"number" : 17,
 					"price" : 100
 				},
 				{
@@ -657,6 +658,19 @@
 		"train_2" : {}
 	},
 	"train_2" : {},
+	"train_info" : 
+	{
+		"train_1" : 
+		{
+			"seat_num" : 10000,
+			"station_num" : 15
+		},
+		"train_2" : 
+		{
+			"seat_num" : 10000,
+			"station_num" : 15
+		}
+	},
 	"train_map" : 
 	{
 		"CZ6111" : "train_1",
