@@ -6,6 +6,7 @@
 #include "../lib/jsoncpp/json/json.h"
 #include "../include/JsonUtil.h"
 #include "../include/OperationForTickets.h"
+#include "../include/adminOpration.h"
 extern User user;
 void login_in(){
     std::string username ;
@@ -70,19 +71,42 @@ bool register_logic(const std::string& username, const std::string& password){
 }
 
 void enterSystem(){
-    int operation = 0;
-    std::cout<<"please choose your operation:\n"<<"\t1. check tickets\n"<<"\t2. buy a ticket\n"<<"\t3. refund ticket"<<std::endl;
-    std::cin>>operation;
-    switch (operation) {
-        case 1:
-            checkTickets();
-            break;
-        case 2:
-            buyTicket();
-            break;
-        case 3:
-            refundTicket();
-            break;
+    if(user.getType()==1){
+        int operation = 0;
+        std::cout<<"please choose your operation:\n"<<"\t1. check tickets\n"<<"\t2. buy a ticket\n"<<"\t3. refund ticket\n"<<"\t0. quit"<<std::endl;
+        std::cin>>operation;
+        switch (operation) {
+            case 1:
+                checkTickets();
+                enterSystem();
+                break;
+            case 2:
+                buyTicket();
+                enterSystem();
+                break;
+            case 3:
+                refundTicket();
+                enterSystem();
+                break;
+            default:
+                break;
+        }
+    }else{
+        int operation = 0;
+        std::cout<<"please choose your operation:\n"<<"\t1. compute profit\n"<<"\t2. lay tickets\n"<<"\t0. quit"<<std::endl;
+        std::cin>>operation;
+        switch (operation) {
+            case 1:
+                computeProfit();
+                enterSystem();
+                break;
+            case 2:
+                layTickets();
+                enterSystem();
+                break;
+            default:
+                break;
+        }
     }
 }
 
